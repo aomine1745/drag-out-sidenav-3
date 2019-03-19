@@ -1,0 +1,37 @@
+.nav {
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  transform: translateX(-105%);
+  height: 100vh;
+  background-color: #fff;
+  z-index: 92;
+  overflow-y: auto;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12), 0 1px 5px 0 rgba(0, 0, 0, .2);
+}
+.drag-target {
+  height: 100vh;
+  width: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 98;
+}
+.nav.nav-out {
+  transform: translateX(0);
+}
+.nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 91;
+  display: none;
+}
