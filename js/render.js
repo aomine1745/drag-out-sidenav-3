@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-	var elems = document.querySelectorAll('.nav');
-	var instances = M.Sidenav.init(elems);
+document.addEventListener('DOMContentLoaded', () => {
+	const elems = document.querySelectorAll('.nav');
+	const instances = M.Sidenav.init(elems);
 });
